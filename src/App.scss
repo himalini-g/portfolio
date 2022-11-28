@@ -1,0 +1,122 @@
+$primary-color: #ffd700;
+// used by ^ animate css
+
+
+$size: 20px;
+$body-text-size: 20px;
+$header-text-size: 40px;
+
+
+.p5-iframe {
+  display:block;
+  margin: 20px auto;
+  width: 800px;
+  height: 600px;
+}
+.youtube-container{
+  text-align: center;
+}
+.youtube-iframe {
+  width: 560px;
+  height: 315px;
+}
+
+
+.slideshow {
+  position: relative;
+  margin: 20px auto;
+  padding: 0 40px;
+  width: 500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+}
+.slideshow-image{
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slideshow-actions{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.slideshow-description{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.slideshow-button {
+  background: #00000000;
+  font-size: $body-text-size;
+  opacity: 0.5;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.box {
+  width: 80%;
+  font-size: $body-text-size;
+  margin: 100px 0px 0px 0px;
+}
+.header{
+  font-size: $header-text-size;
+  // font-style: italic;
+  font-style: bold;
+}
+
+.portfolio{
+  a{
+    font-size: $body-text-size;
+    color: #000000;
+    // text-decoration: None;
+    display: block;
+
+  }
+}
+
+.blob-container{
+  display: flex;
+  align-items: center;
+}
+.blob-description {
+  width: 50%;
+  margin: 20px 40px;;
+}
+
+.assemblage-container{
+  display: flex;
+  align-items: center;
+}
+.assemblage-description {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.kollywood-container{
+  display: flex;
+  align-items: center;
+}
+.kollywood-description {
+  width: 50%;
+  margin: 20px auto;
+}
+
+
+.fullscreen {
+
+  /* Full heght */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
