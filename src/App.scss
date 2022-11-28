@@ -1,8 +1,15 @@
 $primary-color: #ffd700;
-// used by ^ animate css
 
+@font-face {
+  font-family: 'Helmet';
+  src: url('./assets/fonts/Helmet-Regular.ttf');
+  font-weight: bold;
+}
 
-$size: 20px;
+* {
+  font-family: 'Helmet';
+}
+
 $body-text-size: 20px;
 $header-text-size: 40px;
 
@@ -23,11 +30,11 @@ $header-text-size: 40px;
 
 
 .slideshow {
+  border: 5px red;
   position: relative;
-  margin: 20px auto;
   padding: 0 40px;
-  width: 500px;
-  height: 550px;
+  width: 100%;
+  height: 600px;
   display: flex;
   justify-content: center;
 }
@@ -51,20 +58,25 @@ $header-text-size: 40px;
   display: flex;
   justify-content: center;
 }
+
 .slideshow-button {
-  background: #00000000;
+  background: #0000000b;
+  border-radius: 3px;
   font-size: $body-text-size;
-  opacity: 0.5;
   border: none;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  &:hover {
+    background: #BBBB;
+  }
+
 }
 
 .box {
-  width: 80%;
+  width: 85%;
   font-size: $body-text-size;
-  margin: 100px 0px 0px 0px;
+  margin: 100px auto;
 }
 .header{
   font-size: $header-text-size;
@@ -73,7 +85,11 @@ $header-text-size: 40px;
 }
 
 .portfolio{
+  width: 85%;
+  font-size: $body-text-size;
+  margin: 100px auto;
   a{
+    padding: 10px;
     font-size: $body-text-size;
     color: #000000;
     // text-decoration: None;
@@ -82,41 +98,44 @@ $header-text-size: 40px;
   }
 }
 
-.blob-container{
+.slideshow-description-container{
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
-.blob-description {
-  width: 50%;
-  margin: 20px 40px;;
+.description-container {
+  width: 30%;
+  margin: 20px 40px;
 }
-
-.assemblage-container{
-  display: flex;
-  align-items: center;
-}
-.assemblage-description {
-  width: 50%;
-  margin: 20px auto;
-}
-
-.kollywood-container{
-  display: flex;
-  align-items: center;
-}
-.kollywood-description {
-  width: 50%;
-  margin: 20px auto;
-}
-
 
 .fullscreen {
-
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
   /* Full heght */
   height: 100%;
-
+  width: 100%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.bg {
+  z-index: -1;
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+.bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
 }
