@@ -84,16 +84,21 @@ $header-text-size: 40px;
   font-style: bold;
 }
 
+
 .portfolio{
   width: 85%;
   font-size: $body-text-size;
   margin: 100px auto;
-  a{
-    padding: 10px;
-    font-size: $body-text-size;
+  a {
+    width: 200px;
+    font-size: 20px;
     color: #000000;
-    // text-decoration: None;
     display: block;
+    margin: 20px 0; 
+  
+    &:hover {
+      color: #ffd700;
+    }
 
   }
 }

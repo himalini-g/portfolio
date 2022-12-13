@@ -1,11 +1,11 @@
 import './index.scss'
 import '../../App.scss'
-import Slideshow from '../Slideshow'
+import SlideShowDescription from '../SlideShowDescription'
 
 import blob1 from '../../public/images/blobs/slideshow_1.gif'
 import blob2 from '../../public/images/blobs/slideshow_2.gif'
 import blob3 from '../../public/images/blobs/slideshow_3.gif'
-import SlideShowDescription from '../SlideShowDescription'
+
 
 const media = {
     slideshow: [blob1, blob2, blob3],
