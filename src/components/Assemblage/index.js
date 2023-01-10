@@ -1,12 +1,13 @@
 import './index.scss'
 import '../../App.scss'
+import Image from '../Image'
 import SlideShowDescription from '../SlideShowDescription'
 
 import assemblage1 from '../../public/images/assemblage/web_1.jpg'
 import assemblage2 from '../../public/images/assemblage/web_2.jpg'
-
+const images = [assemblage1, assemblage2];
 const media = {
-  slideshow: [assemblage1, assemblage2],
+  slideshow: images.map(image => <Image imageSource={image}/>),
   slideshow_descriptions: ['assemblage 1', 'assemblage 2'],
 
 }

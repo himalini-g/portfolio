@@ -1,18 +1,19 @@
 import './index.scss'
 import '../../App.scss'
 import SlideShowDescription from '../SlideShowDescription'
+import Image from '../Image'
 
 import blob1 from '../../public/images/blobs/slideshow_1.gif'
 import blob2 from '../../public/images/blobs/slideshow_2.gif'
 import blob3 from '../../public/images/blobs/slideshow_3.gif'
 
-
+const images = [blob1, blob2, blob3];
 const media = {
-    slideshow: [blob1, blob2, blob3],
-    slideshow_descriptions: 
-        ['this is really cool and 1 https://objkt.com/asset/hicetnunc/497383',
-        'this is really cool and 2',
-        'this is really cool and 3'],
+  slideshow: images.map(image => <Image imageSource={image}/>),
+  slideshow_descriptions: 
+      ['this is really cool and 1 https://objkt.com/asset/hicetnunc/497383',
+      'this is really cool and 2',
+      'this is really cool and 3'],
 }
 const description = 
 ` Mediums: Processing, AxiDraw, Pen
@@ -29,7 +30,12 @@ produce varying animations.`
 
 const Blobs = () => {
   return (
-    <SlideShowDescription media={media} description={description}/>
+    <>
+      <div className='header'>
+            Product
+      </div>
+      <SlideShowDescription media={media} description={description}/>
+    </>
   )
 }
 

@@ -1,5 +1,6 @@
 import './index.scss'
 import '../../App.scss'
+import Image from '../Image'
 import SlideShowDescription from '../SlideShowDescription'
 
 import truchet1 from '../../public/images/truchet/truchet_1.jpg'
@@ -7,9 +8,9 @@ import truchet2 from '../../public/images/truchet/truchet_2.jpg'
 import truchet3 from '../../public/images/truchet/truchet_3.jpg'
 import truchet4 from '../../public/images/truchet/truchet_4.jpg'
 import truchet0 from '../../public/images/truchet/truchet_0.gif'
-
+const images =  [truchet0,truchet1, truchet2, truchet3, truchet4];
 const media = {
-  slideshow: [truchet0,truchet1, truchet2, truchet3, truchet4],
+  slideshow: images.map(image => <Image imageSource={image}/>),
   slideshow_descriptions: ['truchet0', 'truchet 1', 'truchet 2','truchet 3','truchet 4'],
 }
 
