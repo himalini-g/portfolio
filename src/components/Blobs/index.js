@@ -15,27 +15,23 @@ const media = {
       'this is really cool and 2',
       'this is really cool and 3'],
 }
-const description = 
-` Mediums: Processing, AxiDraw, Pen
-Statement: this is a generative, looping animation/
-Each GIF is the same algorithim with different parameters. I wrote 
-this algorithm from scratch in Processing using a combination of
-metaballs and vector fields. Each hairy blob is a metaball, which 
-is a gravity simulation that produces the effect of the hairy 
-balls glop and unglop like a lava lamp. To produce the hairy 
-surface I use a vector field on top of the metaballs. I then 
-fine tuned the algorithm’s parameters to give myself handles to 
-produce varying animations.`
-
+const header = `Hairy Blobs`
+const medium = `Medium: Processing`
+const duration = 'Duration: 0:10'
+const description = `
+Description: This collection of generative, looping animations are produced from the same algorithm with different parameters. The algorithm uses a combination of a physics simulation called metaballs and vector fields to produce the animation. Each hairy blob is a metaball, which 
+is a simulated planet where the gravity interacts with the other planets (other hairy blobs) to produce the effect of the hairy blobs coagulation and disentangling like a lava lamp. To produce the hairy surface I use a vector field on top of each of the metaballs. 
+`
 
 const Blobs = () => {
   return (
-    <>
-      <div className='header'>
-            Product
+    <div>
+      <div className='header-slideshow'>
+        {header}
       </div>
-      <SlideShowDescription media={media} description={description}/>
-    </>
+      <SlideShowDescription media = {media} item1 = {medium} item2 = {duration} description ={description}/>
+    </div>
+    
   )
 }
 

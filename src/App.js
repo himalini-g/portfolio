@@ -21,10 +21,10 @@ function App() {
           <Route path="/portfolio" element={<Portfolio/>} />
           <Route path="/portfolio/hairy-blobs"element={<Blobs/>} />
           <Route path="/portfolio/gutenberg-clock" element={<Gutenberg/>} />
-          <Route path="/portfolio/kollywood-faces" element={<Kollywood/>} />
+          <Route path="/portfolio/colorism-in-Kollywood" element={<Kollywood/>} />
           <Route path="/portfolio/quiet-pond" element={<QuietPond/>} />
-          <Route path="/portfolio/truchet" element={<Truchet/>} />
-          <Route path="/portfolio/assemblage" element={<Assemblage/>} />
+          <Route path="/portfolio/body-truchet-tiling" element={<Truchet/>} />
+          <Route path="/portfolio/radioactive-food-web" element={<Assemblage/>} />
         </Route>
       </Routes>
     </>

@@ -13,30 +13,37 @@ import pond1 from '../../public/images/quiet_pond/pond_1.png'
 
 
 const images = [pond1];
-const media = {
+const stepsMedia = {
   slideshow: images.map(image => <Image imageSource={image}/>),
   slideshow_descriptions: [],
 }
+
 const pondVideo = <iframe width="890" height="500" src="https://www.youtube.com/embed/ApSSeLzOVnw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-const pondDescription = `mediums: Maya
-Watch the video!!! its literally 40 seconds long. I made this animation short as a study of color and lighting.
-I picked the muted green foliage to offset with the blue of the wings and
-yellow of the fireflies light. The lighting was selected to put the frog in minor`;
-const pondMedium ="Medium: Maya";
-const pondMedia = {
+
+const header = `Quiet Pond`
+const medium =`Medium: Maya`
+const duration = `Duration: 0:48`
+const description = `
+Description: I made this animation short as a study of color and lighting.
+I picked the muted green foliage to offset with the bright blue wings and
+yellow light from the fireflies. The foliage and the toad share muted color schemes to highlight the fireflies disruption to the quiet pond.
+`
+
+const media = {
   slideshow: [pondVideo],
   slideshow_descriptions:[],
 };
 
 
 const QuietPond = () => {
-  
+
   
   return (
     <div>
-      <SlideShowDescription media={pondMedia} description={pondDescription} item1={pondMedium}/>
-      <SlideShowDescription media={media} description="step 1"/>
-
+      <div className='header-slideshow'>
+        {header}
+      </div>
+      <SlideShowDescription media={media} description={description} item1={medium} item2={duration}/>
     </div>
   )
 }

@@ -8,10 +8,15 @@ const media = {
   slideshow_descriptions: [],
 }
 
-const header = 'Gutenberg Clock' 
-const medium = 'Medium: P5.js and Python'
+const header = `Gutenberg Clock`
+const medium = `Medium: P5.js and Python`
+const duration = `Duration: indefinite`
 const description = `
-Description: This clock tells time with text. My goal with this project was to create a kind of clock the viewer has not seen previously. I also wanted there to be some joy and familiarity when checking the time and seeing the phrases associated with it.`
+Description: This clock tells time with text scraped from out of copyright 
+books in the Gutenberg Project. My goal was to create a 
+novel clock. I wanted to evoke the viewer's curiosity when they check the time and inevitably read the phrases associated with it.
+`
+
 
 const Gutenberg = (canvas) => {
   return (
@@ -19,7 +24,7 @@ const Gutenberg = (canvas) => {
       <div className='header-slideshow'>
         {header}
       </div>
-      <SlideShowDescription media = {media} item1 = {medium} description ={description}/>
+      <SlideShowDescription media = {media} item1 = {medium} item2= {duration} description ={description}/>
     </div>
     
   )
