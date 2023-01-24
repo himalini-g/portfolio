@@ -11,13 +11,7 @@ const About = () => {
             artist statement
         </div>
           I'm a new media artist from Carnegie Mellon.
-          For the last couple years I've been treating myself
-          more seriously as a computer scientist rather than an artist.
-          I want that to change. I want to keep making work with 
-          physical objects and code that evoke the bodily and bring
-          joy to viewers. I want to use code as a tool of funny magic
-          on an image rather than an optimization in Facebook's hate s
-          peech detector. 
+          I like cracking jokes with people. When people see my work, I want it to feel like there’s a joke they’re in on. Something obvious that takes a second to appreciate and laugh with me about. It doesn’t have to be incredibly meaningful, it could be a butt or weirdly hairy ball. I especially strive for this humor when I make art with code. Generative or coding based artworks (I find) sometimes feel geometric and a little sterile because of the particulars of the medium. I try to avoid that as much as possible.
         <div className = 'header'>
             contact info
         </div>

@@ -11,6 +11,7 @@ const Portfolio = () => {
         <NavLink to="/portfolio/quiet-pond"> Quiet Pond </NavLink>
         <NavLink to="/portfolio/body-truchet-tiling"> Body Truchet Tiling </NavLink>
         <NavLink to="/portfolio/radioactive-food-web"> Radioactive Food Web </NavLink>
+        <NavLink to="/portfolio/tennis-misses"> Tennis Misses </NavLink>
     </div>
   )
 }

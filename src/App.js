@@ -9,6 +9,7 @@ import Blobs from './components/Blobs'
 import Kollywood from './components/Kollywood'
 import Truchet from './components/Truchet'
 import Assemblage from './components/Assemblage'
+import TennisMisses from './components/TennisMisses'
 import './App.scss'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/portfolio/quiet-pond" element={<QuietPond/>} />
           <Route path="/portfolio/body-truchet-tiling" element={<Truchet/>} />
           <Route path="/portfolio/radioactive-food-web" element={<Assemblage/>} />
+          <Route path="/portfolio/tennis-misses" element={<TennisMisses/>} />
         </Route>
       </Routes>
     </>
