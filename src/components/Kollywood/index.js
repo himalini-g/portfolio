@@ -3,6 +3,8 @@ import '../../App.scss'
 import Image from '../Image'
 import SlideShowDescription from '../SlideShowDescription'
 
+import mega from '../../public/images/kollywood/mega_img_50_50.jpg'
+
 import bhoomi from '../../public/images/kollywood/Bhoomi.jpg'
 import calls from '../../public/images/kollywood/Calls.jpg'
 import chakra from '../../public/images/kollywood/Chakra.jpg'
@@ -20,7 +22,7 @@ import pazhagiya from '../../public/images/kollywood/Pazhagiya_Naatkal.jpg'
 import thallumaala from '../../public/images/kollywood/Thallumaala.jpg'
 import trip from '../../public/images/kollywood/Trip.jpg'
 import v from '../../public/images/kollywood/V.jpg'
-const images =  [bhoomi, calls, chakra, 
+const images =  [mega, bhoomi, calls, chakra, 
       chennayil, chidambaram, eeswaran, 
       kabadadaari, kamali, kasa,
       master, mirugaa, naanum,
@@ -30,7 +32,7 @@ const images =  [bhoomi, calls, chakra,
 const media = {
   slideshow: images.map(image => <Image imageSource={image}/>),
   slideshow_descriptions: 
-    ['bhoomi','calls', 'chakra',
+    ['','bhoomi','calls', 'chakra',
      'chennayil', 'chidambaram', 'eeswaran',
      'kabadadaari', 'kamali', 'kasa', 
      'master', 'mirugaa', 'naanum',
